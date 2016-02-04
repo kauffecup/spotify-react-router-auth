@@ -3,8 +3,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 270 50" enable-background="new 0 0 270 50" xml:space="preserve">
-<g>
-	<path fill="#648F00" d="M270,25c0,13.8-11.2,25-25,25H25C11.2,50,0,38.8,0,25l0,0C0,11.2,11.2,0,25,0h220C258.8,0,270,11.2,270,25
+<g class="spotify-btn">
+	<path  class="main" d="M270,25c0,13.8-11.2,25-25,25H25C11.2,50,0,38.8,0,25l0,0C0,11.2,11.2,0,25,0h220C258.8,0,270,11.2,270,25
 		L270,25z"/>
 	<g>
 		<g>
