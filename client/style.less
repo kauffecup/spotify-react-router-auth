@@ -1,0 +1,77 @@
+@accent-color: #648F00;
+@error-color: #FB654A;
+@secondary-text-color: #c1c1c1;
+
+// get the page ready
+* { outline: none; box-sizing: border-box; }
+body { padding: 0; margin: 0; }
+html, body, .spotify-login { height: 100%; width: 100%; position: absolute; top: 0; right: 0; }
+body, button, input {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+h1 { font-size: 2.25em; font-weight: normal;}
+h2 { font-size: 1.75em; font-weight: normal; margin-bottom: 20px;}
+h3 { font-size: 1.5em;  font-weight: normal;}
+h4 { font-size: 1.25em; font-weight: normal;}
+h5 { font-size: 1em;  font-weight: normal;}
+h6 { font-size: 1em;  font-weight: normal;}
+ul { list-style: none; margin: 0; padding: 0; }
+
+a {
+  &:visited, &:link {
+    color: @secondary-text-color;
+  }
+  &:hover, &:active {
+    color: @accent-color;
+  }
+}
+
+// let the real CSS begin
+.spotify-login {
+  h1 {
+    background-color: @accent-color;
+    color: #fff;
+    padding: 20px 50px;
+  }
+  .page-content {
+    padding: 10px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .error {
+    color: @error-color;
+    &, h2 { font-weight: bold; }
+  }
+  .user {
+    .user-content {
+      display: flex;
+      align-items: center;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      ul {
+        li {
+          display: flex;
+          padding: 3px 0px;
+          span:first-child {
+            width: 150px;
+            text-align: right;
+            margin-right: 20px;
+          }
+          span:last-child {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
