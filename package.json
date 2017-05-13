@@ -17,13 +17,13 @@
       }
     },
     "start": {
-      "command": "node --harmony_destructuring server/app.js",
+      "command": "node --harmony_destructuring_assignment server/app.js",
       "env": {
         "NODE_ENV": "production"
       }
     },
     "dev": {
-      "command": "node --harmony_destructuring server/app.js",
+      "command": "node --harmony_destructuring_assignment server/app.js",
       "env": {
         "NODE_ENV": "development"
       }
