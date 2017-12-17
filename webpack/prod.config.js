@@ -15,7 +15,7 @@ module.exports = {
     loaders: [
       { test: /\.svg$/, loaders: ['raw-loader']},
       // take all less files, compile them, and bundle them in with our js bundle
-      { test: /\.less$/, loader: 'style!css!autoprefixer?browsers=last 2 version!less' },
+      { test: /\.less$/, loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version!less-loader' },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -35,7 +35,7 @@ module.exports = {
     }),
     // optimizations
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
