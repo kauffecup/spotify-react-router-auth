@@ -6,6 +6,11 @@ import loginSVG from '../log_in.svg';
  * Has a login button that hit's the login url
  */
 export default class Login extends Component {
+
+  constructor (props){
+    super(props);
+  }
+
   render() {
     return (
       <div className="login">

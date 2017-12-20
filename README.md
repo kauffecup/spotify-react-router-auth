@@ -29,13 +29,9 @@ class Root extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router history={hashHistory}>
-          <Route path="/" component={App}>
-            <IndexRoute component={Login} />
-            <Route path="/user/:accessToken/:refreshToken" component={User} />
-            <Route path="/error/:errorMsg" component={Error} />
-          </Route>
-        </Router>
+        <ConnectedRouter history={hashHistory}>
+          <Route path="/" component={App}/>
+        </ConnectedRouter>
       </Provider>
     );
   }

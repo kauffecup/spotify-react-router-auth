@@ -17,7 +17,7 @@ module.exports = {
     loaders: [
       { test: /\.svg$/, loaders: ['raw-loader']},
       // take all less files, compile them, and bundle them in with our js bundle
-      { test: /\.less$/, loader: 'style!css!autoprefixer?browsers=last 2 version!less' },
+      { test: /\.less$/, loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version!less-loader' },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -42,8 +42,8 @@ module.exports = {
         NODE_ENV: JSON.stringify('development'),
       },
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
 };
